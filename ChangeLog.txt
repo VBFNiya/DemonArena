@@ -1,0 +1,23 @@
+﻿Version 6.0.0.0
+[*] Added a ChangeLog text file to the DemonArena project. It would allow me to log changes as I make them. That's why this log is so much more detailed.
+[*] Increased Dark Cardinal's rocket damage.
+[*] Added some comments to code in the Arena class.
+[*] Minor code changes: Altered the EntityCollection class and how its used within the Arena class.
+[*] Minor code changes: Made collision detection slightly more efficient.
+[*] Minor code changes: Made XNA renderer slightly more efficient by caching Texture2D objects to Sprite objects instead of doing look-ups based on string keys.
+[*] Fixed bug where the XNA renderer would crash when the GraphicsDevice was lost. Changing the resolution while the app was running was one such way to cause the crash.
+[*] Decreased time ArachNorb's takes from preparing an attack to the actual attack.
+[*] Fixed bug in loop implementations of creature defininition execution where the loop would go one extra iteration.
+[*] Random spawner's maximum number of spawns per creature changed from 20 to 100.
+[*] Made PurpleAfrit more formidable. It attacks more frequently, it stays longer in its dashing attack and it selects a new target if it still has dash time instead of stopping. It also has a greater chance of executing the dash attack.
+[*] GetSprite now performs dictionary look-ups instead of a linear scan when retrieving sprites to render. However, linear look-ups are performed when sprites are requested for the first time.
+[*] Creature's definition execution engine can now execute multiple states concurrently. This makes more complex creature behavior possible. This is the most significant change of this version.
+[*] Added entity commands for changing creature alpha value.
+[*] Entity commands in creature definitions are now executed through the Action class rather than the Delegate class. It would improve performance of the definition execution engine as Invoke is much faster than DynamicInvoke.
+[*] The Wraith now inherits from the ComplexCreature class. It also uses the new capability of the definition execution engine to execute states in parallel in order to implement its new special ability.
+[*] Some DefinitionExpression derived classes now implement fields instead of properties since accessing fields are faster. The RenderInfo class also use fields instead now.
+[*] XNADrawImage now passes Rectangles by reference instead of by value.
+[*] Removed LINQ filtering when cycling entities in RefreshXNA.
+[*] Made the selection of targets by creatures more efficient by not recreating a list of potential targets every time a call is made to select a target.
+[*] The Size property of the ComplexCreature, Creature and Projectile classes were made more efficient by moving scaling calculations out of the property. Scaling is now done only when the entity's sprite has been changed and the value cached to a private field.
+[*] Changed SpriteBatch sorting mode from Immediate to Deferred. Deferred according to various online sources is supposed to be more efficient in XNA 4.0.

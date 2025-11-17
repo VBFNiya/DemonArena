@@ -1,0 +1,3379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{38EABC70-A754-401B-B0C8-0106644FA71E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DemonArena.My.MyApplication</StartupObject>
+    <RootNamespace>DemonArena</RootNamespace>
+    <AssemblyName>DemonArena</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DemonArena.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DemonArena.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Backround Resources\ArenaBackgrounds.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArenaBackgrounds.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Anomolies\Explosion.vb" />
+    <Compile Include="Entities\Anomolies\MoveBlur.vb" />
+    <Compile Include="Entities\Base Classes\Arena.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entities\Base Classes\Complex Entities\ComplexEntityBase.vb" />
+    <Compile Include="Entities\Base Classes\Complex Entities\ComplexCreature.vb" />
+    <Compile Include="Entities\Base Classes\Complex Entities\Definition.vb" />
+    <Compile Include="Entities\Base Classes\NonAnimatedEntity.vb" />
+    <Compile Include="Entities\Demons\Afrit.vb" />
+    <Compile Include="Entities\Demons\ArachNorb.vb" />
+    <Compile Include="Entities\Demons\DarkCardinal.vb" />
+    <Compile Include="Entities\Demons\Disciple.vb" />
+    <Compile Include="Entities\Demons\Fallen.vb" />
+    <Compile Include="Entities\Demons\IronLich.vb" />
+    <Compile Include="Entities\Demons\Lost Soul.vb" />
+    <Compile Include="Entities\Demons\Wizard.vb" />
+    <Compile Include="Entity Resources\Afrit.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Afrit.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\Afrit2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Afrit2.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\Afrit3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Afrit3.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\AfritWeakProjectile.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AfritWeakProjectile.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\ArachNorb.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArachNorb.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\ArachNorbProjectile.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArachNorbProjectile.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\Cacolich.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cacolich.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\CacolichProjectile.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CacolichProjectile.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\CometProjectile.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CometProjectile.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\DarkCardinal.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DarkCardinal.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\Disciple.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Disciple.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\DiscipleProjectile1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DiscipleProjectile1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\Explosion.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Explosion.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\Fallen.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fallen.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\FallenProjectile.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FallenProjectile.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\Glows.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Glows.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\Ironlich.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ironlich.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\IronLichProjectile.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IronLichProjectile.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\LostSoul.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LostSoul.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\PlasmaBall.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlasmaBall.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\Rocket.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rocket.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\Spider.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Spider.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\Spider2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Spider2.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\SpiderProjectileStrong.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpiderProjectileStrong.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\SpiderProjectileWeak.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpiderProjectileWeak.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\Spirit.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Spirit.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\SpiritProjectile.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpiritProjectile.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\TeleportFog.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TeleportFog.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\Wizard.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Wizard.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\WizardProjectile.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WizardProjectile.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Resources\WraithProjectile.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WraithProjectile.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Anomolies\TeleportFog.vb" />
+    <Compile Include="Entities\Base Classes\AnimatedEntity.vb" />
+    <Compile Include="Entities\Base Classes\ArenaAnomoly.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRandomSpawn.Designer.vb">
+      <DependentUpon>FrmRandomSpawn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRandomSpawn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General Helpers\FastList.vb" />
+    <Compile Include="General Helpers\IDGenerator.vb" />
+    <Compile Include="General Helpers\ImageOffsetting.vb" />
+    <Compile Include="General Helpers\PNGChunkReader.vb" />
+    <Compile Include="General Helpers\VariableManager.vb" />
+    <Compile Include="Sprite Management\Sprites.vb" />
+    <Compile Include="Entity Resources\Wraith.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Wraith.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Base Classes\Interfaces.vb" />
+    <Compile Include="Entities\Base Classes\Creature.vb" />
+    <Compile Include="Entities\Base Classes\Projectile.vb" />
+    <Compile Include="Entities\Demons\Cacolich.vb" />
+    <Compile Include="Entities\Demons\Spider.vb" />
+    <Compile Include="Entities\Demons\Spirit.vb" />
+    <Compile Include="Entities\Demons\Wraith.vb" />
+    <Compile Include="FrmArena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArena.Designer.vb">
+      <DependentUpon>FrmArena.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\CreatureStable.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Game\Levels.vb" />
+    <Compile Include="General Helpers\ClassicGDI.vb" />
+    <Compile Include="General Helpers\DrawingHelpers.vb" />
+    <Compile Include="General Helpers\ExtensionMethods.vb" />
+    <Compile Include="General Helpers\GeneralHelpers.vb" />
+    <Compile Include="General Helpers\Geometry.vb" />
+    <Compile Include="Movement\Movement.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Sprite Management\SpriteManagement.vb" />
+    <Compile Include="Sprite Management\SpriteHelpers.vb" />
+    <Compile Include="Sprite Management\SpriteLoader.vb" />
+    <Compile Include="TestArena.Designer.vb">
+      <DependentUpon>TestArena.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TestArena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Backround Resources\ArenaBackgrounds.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ArenaBackgrounds.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Afrit.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Afrit.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Afrit2.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Afrit2.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Afrit3.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Afrit3.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\AfritWeakProjectile.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AfritWeakProjectile.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\ArachNorb.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ArachNorb.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\ArachNorbProjectile.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ArachNorbProjectile.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Cacolich.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Cacolich.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\CacolichProjectile.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CacolichProjectile.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\CometProjectile.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CometProjectile.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\DarkCardinal.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DarkCardinal.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Disciple.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Disciple.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\DiscipleProjectile1.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DiscipleProjectile1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Explosion.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Explosion.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Fallen.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Fallen.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\FallenProjectile.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FallenProjectile.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Glows.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Glows.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Ironlich.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Ironlich.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\IronLichProjectile.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IronLichProjectile.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\LostSoul.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LostSoul.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\PlasmaBall.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PlasmaBall.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Rocket.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Rocket.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Spider.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Spider.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Spider2.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Spider2.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\SpiderProjectileStrong.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SpiderProjectileStrong.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\SpiderProjectileWeak.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SpiderProjectileWeak.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Spirit.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Spirit.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\SpiritProjectile.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SpiritProjectile.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\TeleportFog.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TeleportFog.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Wizard.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Wizard.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\WizardProjectile.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WizardProjectile.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\Wraith.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Wraith.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entity Resources\WraithProjectile.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WraithProjectile.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmArena.resx">
+      <DependentUpon>FrmArena.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRandomSpawn.resx">
+      <DependentUpon>FrmRandomSpawn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestArena.resx">
+      <DependentUpon>TestArena.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6A6A4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6A7A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6A8A2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6B6B4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6B7B3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6B8B2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6C6C4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6C7C3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6C8C2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6D5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6D6D4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6D7D3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6D8D2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6E1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6E5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6E6E4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6E7E3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6E8E2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6F1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6F5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6F6F4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6F7F3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6F8F2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6G1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6G5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6G6G4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6G7G3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6G8G2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6H0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6K0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6L0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6M0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6N0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6O0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6P1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6P5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6P6P4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6P7P3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6P8P2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6Q1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6Q5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6Q6Q4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6Q7Q3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6Q8Q2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6R1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6R5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6R6R4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6R7R3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ETH6R8R2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03A2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03A3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03A4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03B2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03B3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03B4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03C2C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03C3C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03C4C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03D2D8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03D3D7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03D4D6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03D5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03E1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03E2E8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03E3E7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03E4E6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03E5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03F1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03F2F8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03F3F7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03F4F6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03F5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03G1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03G2G8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03G3G7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03G4G6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03G5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03H1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03H2H8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03H3H7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03H4H6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03H5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03K0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03L0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03M0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03N0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03O0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03P0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03Q0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WR03R0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beach0008x800.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2A2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2A3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2A4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2B2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2B3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2B4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2C2C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2C3C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2C4C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2D0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2E0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2F0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO2G0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2A2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2A3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2A4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2B2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2B3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2B4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2C0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2D0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2E0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2F0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2G0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2H0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2K0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2L0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2M0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2N0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2O0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2Q0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2R0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP2S0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08A2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08A3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08A4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08B2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08B3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08B4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08C2C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08C3C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08C4C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08D2D8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08D3D7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08D4D6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08D5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08E0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08F0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08G0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08H0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR08J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IB02A0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IB02B0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IB02C0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IB02D0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IB02E0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HLF1A0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HLF1B0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HLF1C0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HLF1D0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HLF1E0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFOGA0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFOGB0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFOGC0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFOGD0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFOGE0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFOGF0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFOGG0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFOGH0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFOGI0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFOGJ0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1A2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1A4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1B2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1B3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1B4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1C2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1C3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1C4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1D2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1D3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1D4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1D5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1D6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1D7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1D8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1E1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1E2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1E3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1E4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1E5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1E6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1E7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1E8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1F1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1F2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1F3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1F4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1F5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1F6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1F7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1F8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1G1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1G2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1G3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1G4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1G5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1G6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1G7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1G8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1H1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1H2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1H3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1H4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1H5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1H6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1H7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1H8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1I1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1I2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1I3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1I4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1I5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1I6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1I7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1I8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1K0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1L0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1M0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1N0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1O0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1P0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1Q0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1R0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAC1S0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CBALA0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CBALB0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CBALC0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CBALD0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CBALE0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CBALF0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CBALG0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CBALH0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CBALI0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CBALJ0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LM_Blue.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LM_Green.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LM_Magenta.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LM_Orange.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LM_Red.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LM_White.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LM_Yellow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeadWorld.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06T8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06U1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06U2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06U3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06U4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06U5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06U6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06U7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06U8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06A2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06A3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06A4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06B2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06B3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06B4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06C2C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06C3C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06C4C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06D2D8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06D3D7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06D4D6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06D5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06E1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06E2E8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06E3E7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06E4E6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06E5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06F1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06F2F8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06F3F7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06F4F6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06F5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06G1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06G2G8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06G3G7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06G4G6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06G5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06H1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06H2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06H3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06H4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06H5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06H6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06H7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06H8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06K0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06L0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06M0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06N0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06O0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06P0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06Q0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06R0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06S1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06S2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06S3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06S4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06S5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06S6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06S7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06S8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06T1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06T2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06T3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06T4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06T5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06T6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR06T7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMTA0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMTB0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMTC0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMTD0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMTE0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMTF0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMTG0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMTH0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMTI0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3A2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3A3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3A4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3B2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3B3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3B4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3C0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3D0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3E0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3F0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3G0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3H0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3K0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3L0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3M0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3N0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3O0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3Q0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3R0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPP3S0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1A0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1B0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1C0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1D0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1E0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1F0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1G0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1H0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1K0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1L0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1M0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1N0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1O0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1P0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1Q0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1R0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1S0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1T0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXP1U0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3A2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3A3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3A4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3B2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3B3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3B4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3C0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3D0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3E0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3F0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3G0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3H0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRL3I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02A2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02A3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02A4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02B2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02B3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02B4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02C2C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02C3C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02C4C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02D2D8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02D3D7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02D4D6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02D5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02E1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02E2E8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02E3E7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02E4E6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02E5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02F1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02F2F8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02F3F7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02F4F6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02F5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02G1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02G2G8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02G3G7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02G4G6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02G5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02H1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02H2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02H3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02H4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02H5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02H6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02H7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02H8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02K0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02L0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02M0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02N0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02O0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02P0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02Q0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02R0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02S1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02S2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02S3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02S4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02S5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02S6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02S7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02S8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02T1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02T2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02T3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02T4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02T5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02T6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02T7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02T8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02U1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02U2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02U3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02U4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02U5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02U6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02U7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR02U8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07A2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07A3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07A4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07B2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07B3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07B4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07C2C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07C3C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07C4C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07D2D8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07D3D7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07D4D6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07D5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07E1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07E2E8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07E3E7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07E4E6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07E5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07F1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07F2F8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07F3F7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07F4F6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07F5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07G1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07G2G8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07G3G7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07G4G6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07G5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07H1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07H2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07H3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07H4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07H5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07H6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07H7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07H8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07K0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07L0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07M0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07N0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07O0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07P0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07Q0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07R0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07S1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07S2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07S3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07S4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07S5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07S6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07S7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07S8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07T1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07T2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07T3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07T4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07T5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07T6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07T7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07T8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07U1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07U2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07U3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07U4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07U5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07U6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07U7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FR07U8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4A2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4A3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4A4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4B2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4B3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4B4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4C2C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4C3C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4C4C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4D0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4E0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4F0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KOO4G0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5B2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5B3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5B4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5C2C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5C3C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5C4C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5D2D8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5D3D7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5D4D6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5D5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5E1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5E2E8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5E3E7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5E4E6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5E5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5F1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5F2F8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5F3F7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5F4F6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5F5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5G1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5G2G8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5G3G7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5G4G6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5G5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5H0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5K0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5L0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5M0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5A2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5A3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAL5A4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BAL3A0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BAL3B0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BAL3C0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BAL3D0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BAL3E0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7A6A4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7A7A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7A8A2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7B6B4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7B7B3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7B8B2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7C6C4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7C7C3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7C8C2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7D5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7D6D4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7D7D3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7D8D2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7E1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7E5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7E6E4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7E7E3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7E8E2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7F1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7F5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7F6F4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7F7F3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7F8F2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7G0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7H0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7K0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7L0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7M0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7N0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7O0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7P0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7Q0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7R0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7S0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7T0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7U0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7V0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7W0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSH7X0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WZB1A0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WZB1B0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WZB1C0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WZB1D0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WZB1E0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WZB1F0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WZB1G0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WZB1H0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDA2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDA3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDA4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDA5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDA6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDA7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDA8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDB1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDB2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDB3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDB4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDB5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDB6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDB7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDB8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDC1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDC2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDC3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDC4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDC5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDC6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDC7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDC8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDD2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDD3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDD4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDD5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDD6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDD7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDD8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDE0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDF0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDG0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDH0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDI0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDJ0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDK0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARDL0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROCA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROCA2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROCA3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROCA4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROCA5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROCB1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROCB2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROCB3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROCB4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROCB5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROCC0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROCD0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROCE0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULA5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULA6A4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULA7A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULA8A2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULB1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULB5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULB6B4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULB7B3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULB8B2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULC1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULC5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULC6C4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULC7C3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULC8C2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULD5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULD6D4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULD7D3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULD8D2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULE5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULE6E4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULE7E3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULE8E2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULF0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULG0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULH0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULI0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULJ0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKULK0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04A2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04A3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04A4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04B2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04B3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04B4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04C2C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04C3C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04C4C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04D2D8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04D3D7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04D4D6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04D5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04E0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04F0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04G0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04H0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR04J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLASA0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLASB0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLASC0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLASD0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLASE0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLASF0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLASG0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBA2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBA3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBA4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBA5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBB1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBB2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBB3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBB4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBB5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBC1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBC2C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBC3C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBC4C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBC5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBD0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBE0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBF0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBG0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNBH0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNFI1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNFI2I8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNFI3I7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNFI4I6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNFI5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNFA0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNFB0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNFC0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNFD0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNFE0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNFF0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACNFG0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCA2A8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCA3A7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCA4A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCA5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCB1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCB2B8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCB3B7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCB4B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCB5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCC1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCC2C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCC3C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCC4C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCC5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCD2D8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCD3D7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCD4D6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCD5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCE2E8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCE3E7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCE4E6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCE5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCF1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCF2F8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCF3F7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCF4F6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCF5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCG2G8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCG3G7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCG4G6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCG5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCH0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCI0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCJ0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCK0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCL0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCM0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCN0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISCO0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CFX3A0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CFX3B0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CFX3C0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CFX3D0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CFX3E0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CFX3F0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CFX3G0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CFX3H0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CFX3I0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CFX3J0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CFX3K0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
